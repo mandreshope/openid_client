@@ -88,7 +88,8 @@ class _MyHomePageState extends State<MyHomePage> {
               OutlinedButton(
                   child: const Text('Login'),
                   onPressed: () async {
-                    var credential = await authenticate(client, scopes: scopes);
+                    var credential =
+                        await authenticate(client, context, scopes: scopes);
                     var userInfo = await credential.getUserInfo();
                     setState(() {
                       this.userInfo = userInfo;

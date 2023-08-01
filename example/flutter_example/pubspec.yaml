@@ -33,7 +33,8 @@ dependencies:
     sdk: flutter
   openid_client:
     path: ../..
-  url_launcher: ^6.1.7
+  url_launcher: ^6.1.12
+  webview_flutter: ^4.2.2
 
 
 dev_dependencies:
